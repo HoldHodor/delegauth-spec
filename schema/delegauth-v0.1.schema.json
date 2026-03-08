@@ -23,7 +23,7 @@
     "delegauth_version": { "type": "string", "const": "0.1" },
     "mandate_id": { "type": "string", "minLength": 8 },
     "generated_at_utc": { "type": "string", "format": "date-time" },
-    "policy_hash": { "type": "string", "minLength": 16 },
+    "policy_hash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
     "locale": { "type": "string", "enum": ["en", "de"] },
 
     "identity": {
