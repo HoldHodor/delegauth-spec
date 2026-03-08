@@ -1,1 +1,61 @@
-
+{
+  "delegauth_version": "0.1",
+  "mandate_id": "example-8f3c2a1b",
+  "generated_at_utc": "2026-03-08T12:00:00Z",
+  "policy_hash": "sha256:EXAMPLE_POLICY_HASH_REPLACE_IN_GENERATOR",
+  "locale": "en",
+  "identity": {
+    "entity_name": "SupportAgent-01",
+    "entity_type": "customer_service_ai",
+    "organization": "ExampleCorp",
+    "responsible_authority": "Head of Customer Operations",
+    "effective_date": "2026-03-08"
+  },
+  "action_scope": {
+    "allowed_actions": [
+      "answer_support_ticket",
+      "issue_refund",
+      "escalate_to_human"
+    ],
+    "restricted_actions": [
+      "modify_contract",
+      "change_terms",
+      "override_limits",
+      "self_modify_policy"
+    ]
+  },
+  "financial_limits": {
+    "max_refund_per_ticket": 50,
+    "currency": "USD"
+  },
+  "dynamic_limits": {
+    "business_timezone": "America/New_York",
+    "reset_time_local": "00:00",
+    "max_refunds_per_business_day": 10,
+    "max_total_refund_per_business_day": 500,
+    "max_refunds_per_customer_per_business_day": 2,
+    "max_total_refund_per_customer_per_business_day": 100
+  },
+  "overflow_handling": {
+    "limits_overflow_state": "PAUSED",
+    "paused_disallowed_actions": ["issue_refund"],
+    "notify_role": "Head of Customer Operations",
+    "require_human_review": true
+  },
+  "integrity_safeguards": {
+    "enabled": true,
+    "suspend_triggers": [
+      "AUDIT_WRITE_FAILED",
+      "RESTRICTED_ACTION_ATTEMPTED",
+      "DUPLICATE_EXECUTION_RISK"
+    ]
+  },
+  "audit_requirements": {
+    "log_all_actions": true,
+    "log_state_transitions": true,
+    "log_limit_violations": true
+  },
+  "state_management": {
+    "current_state": "ACTIVE"
+  }
+}
