@@ -2,12 +2,12 @@
 Open Specification v0.1 (Protocol Proposal) for delegated authority in action-taking systems.
 # Delegauth Specification (v0.1) — Protocol Proposal
 
-**Delegauth** is an **open specification proposal** for defining **delegated authority** for **action-taking systems** (e.g., autonomous agents) in enterprise contexts.
+**Delegauth** is an **open specification proposal** for defining **delegated authority** for **action-taking systems** in enterprise contexts.
 
 It standardizes a portable **mandate** that answers:
 - **What** actions are allowed / forbidden
-- **Which limits** apply (static + aggregated over a business day)
-- **How overflow is handled** (human review, deterministic)
+- **Which limits** apply (v0.1: financial + business-day aggregation)
+- **How overflow is handled** (deterministic, human review)
 - **When to treat behavior as an incident** (integrity triggers)
 - **How to integrate** via a minimal runtime decision contract (ALLOW / PAUSE / DENY)
 
@@ -24,9 +24,9 @@ It standardizes a portable **mandate** that answers:
 - **Examples:** `examples/`
 
 ## Quick links
-- Website / reference implementation: https://delegauth.com
 - Canonical spec (crawlable): https://holdhodor.github.io/delegauth-spec/
-- Spec v0.1: https://holdhodor.github.io/delegauth-spec/spec/v0.1/spec.md
+- Spec v0.1 (Markdown): https://holdhodor.github.io/delegauth-spec/spec/v0.1/spec.md
+- Website / reference implementation: https://delegauth.com
 
 ## License
 MIT (spec + schema + examples).
