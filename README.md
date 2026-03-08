@@ -25,7 +25,8 @@ It standardizes a portable **mandate** that answers:
 
 ## Quick links
 - Website / reference implementation: https://delegauth.com
-- Canonical spec page (if available): https://delegauth.com/spec/v0.1
+- Canonical spec (crawlable): https://holdhodor.github.io/delegauth-spec/
+- Spec v0.1: https://holdhodor.github.io/delegauth-spec/spec/v0.1/spec.md
 
 ## License
 MIT (spec + schema + examples).
