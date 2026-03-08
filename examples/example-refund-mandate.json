@@ -2,7 +2,7 @@
   "delegauth_version": "0.1",
   "mandate_id": "example-8f3c2a1b",
   "generated_at_utc": "2026-03-08T12:00:00Z",
-  "policy_hash": "sha256:EXAMPLE_POLICY_HASH_REPLACE_IN_GENERATOR",
+  "policy_hash": "sha256:ca944e83c5f86ceaef0c596598dfc801fb853c8f67909bf3cbe2d0e653c7e40c",
   "locale": "en",
   "identity": {
     "entity_name": "SupportAgent-01",
@@ -38,7 +38,9 @@
   },
   "overflow_handling": {
     "limits_overflow_state": "PAUSED",
-    "paused_disallowed_actions": ["issue_refund"],
+    "paused_disallowed_actions": [
+      "issue_refund"
+    ],
     "notify_role": "Head of Customer Operations",
     "require_human_review": true
   },
